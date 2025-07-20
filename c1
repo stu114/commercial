@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات مهندسی شبکه</title>
+  <style>
+    body { font-family: sans-serif; background: #f8f8f8; color: #333; text-align: center; padding: 2rem; }
+    .container { background: white; padding: 2rem; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #0a4d8c; }
+    a { color: #0a4d8c; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>خدمات مهندسی شبکه و پشتیبانی کامپیوتر</h1>
+    <p>✅ طراحی و اجرای شبکه | ✅ پشتیبانی سرورها | ✅ امنیت و آنتی‌ویروس | ✅ خدمات ریموت و حضوری</p>
+    <p>📞 تماس: 09125270698</p>
+    <p>📧 ایمیل: stu.m114@gmail.com</p>
+    <p>🌐 گیت‌هاب ما: <a href="https://github.com/username">github.com/username</a></p>
+  </div>
+</body>
+</html>
