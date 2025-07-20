@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>خدمات نصب و پشتیبانی شبکه‌های کامپیوتری</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background-color: #f0f4f8;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0052cc, #0066ff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-content h3 {
+      margin: 0 0 15px 0;
+      color: #0052cc;
+    }
+
+    .card-content ul {
+      list-style: inside disc;
+      padding: 0;
+      margin: 0 0 15px 0;
+      flex-grow: 1;
+      color: #34495e;
+    }
+
+    .card-content ul li {
+      margin-bottom: 8px;
+    }
+
+    .btn-contact {
+      background-color: #0066ff;
+      color: white;
+      text-align: center;
+      padding: 14px 0;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,102,255,0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-contact:hover {
+      background-color: #004bb5;
+      box-shadow: 0 6px 14px rgba(0,75,181,0.6);
+    }
+
+    footer {
+      background-color: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .card img {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>خدمات نصب و پشتیبانی شبکه‌های کامپیوتری</h1>
+  <p>راه‌حل‌های تخصصی برای دیتاسنترها، شرکت‌ها و دفاتر کاری</p>
+</header>
+
+<main class="container">
+
+  <section class="services">
+
+    <article class="card">
+      <img src="pic (1).jpg?auto=format&fit=crop&w=800&q=80" alt="دیتاسنتر و سرورها" />
+      <div class="card-content">
+        <h3>راه‌اندازی دیتاسنتر و سرورها</h3>
+        <ul>
+          <li>طراحی و پیاده‌سازی دیتاسنترهای اختصاصی</li>
+          <li>نصب و پیکربندی سرورهای فیزیکی و مجازی</li>
+          <li>مانیتورینگ و بهینه‌سازی عملکرد سرورها</li>
+          <li>مدیریت فضای ذخیره‌سازی و بکاپ‌گیری حرفه‌ای</li>
+        </ul>
+        <a href="tel:09125270698" class="btn-contact">تماس فوری: 09125270698 نادری زاده</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="pic (2).jpg?auto=format&fit=crop&w=800&q=80" alt="شبکه‌های کامپیوتری" />
+      <div class="card-content">
+        <h3>نصب و راه‌اندازی شبکه‌های کامپیوتری</h3>
+        <ul>
+          <li>پیاده‌سازی شبکه‌های LAN و WAN با تجهیزات روز دنیا</li>
+          <li>پیکربندی سوییچ‌ها، روترها و فایروال‌ها (Cisco, Mikrotik)</li>
+          <li>راه‌اندازی شبکه‌های بی‌سیم امن و پرسرعت</li>
+          <li>عیب‌یابی و رفع مشکلات شبکه به صورت حرفه‌ای</li>
+        </ul>
+        <a href="tel:09125270698" class="btn-contact">تماس فوری: 09125270698 نادری زاده </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="pic (3).jpg?auto=format&fit=crop&w=800&q=80" alt="پشتیبانی سیستم‌ها" />
+      <div class="card-content">
+        <h3>پشتیبانی سیستم‌های کامپیوتری</h3>
+        <ul>
+          <li>پشتیبانی ۲۴/۷ سخت‌افزار و نرم‌افزار</li>
+          <li>نصب و به‌روزرسانی آنتی‌ویروس و سیستم‌های امنیتی</li>
+          <li>پشتیبانی از راه دور و حضور در محل</li>
+          <li>رفع مشکلات نرم‌افزاری و سخت‌افزاری در کمترین زمان</li>
+        </ul>
+        <a href="tel:09125270698" class="btn-contact">تماس فوری: 09125270698 نادری زاده</a>
+      </div>
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  © تمامی حقوق برای شرکت خدمات شبکه نادری زاده محفوظ است.
+</footer>
+
+</body>
+</html>
