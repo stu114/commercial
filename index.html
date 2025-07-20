@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>خدمات مهندسی شبکه</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات شبکه نادری‌زاده</title>
   <style>
     body {
-      font-family: Tahoma, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
-    .hero {
-      background-color: #0a4d8c;
+    header {
+      background-color: #002b5c; /* سرمه‌ای */
       color: white;
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-      margin-top: -2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    .highlight {
+      color: #ff6600; /* نارنجی */
     }
 
-    h1 {
-      margin-top: 0;
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #002b5c;
     }
 
     ul {
-      text-align: right;
-      line-height: 2;
+      list-style: none;
+      padding: 0;
     }
 
-    .contact {
-      margin-top: 2rem;
-      padding: 1rem;
-      background-color: #f0f0f0;
-      border-radius: 6px;
-      text-align: right;
-    }
-
-    a {
-      color: #0a4d8c;
-      text-decoration: none;
+    ul li::before {
+      content: "\2022";
+      color: #ff6600;
       font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    footer {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    .call-btn {
+      display: inline-block;
+      background-color: #ff6600;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <h1>خدمات مهندسی شبکه و پشتیبانی سیستم‌های کامپیوتری</h1>
-    <p>سریع، مطمئن، حرفه‌ای</p>
-  </div>
 
-  <div class="container">
-    <h2>🔧 خدمات ما:</h2>
+  <header>
+    <h1>خدمات <span class="highlight">شبکه</span> نادری‌زاده</h1>
+  </header>
+
+  <section>
+    <h2>معرفی خدمات</h2>
+    <p>
+      ارائه کلیه خدمات راه‌اندازی و نصب شبکه‌های کامپیوتری، شامل بخش‌های <strong>پسیو</strong> و <strong>اکتیو</strong>، مناسب برای انواع کسب‌وکارها از کوچک تا بزرگ.
+    </p>
+
     <ul>
-      <li>طراحی و پیاده‌سازی شبکه‌های کامپیوتری (LAN/WAN/Wireless)</li>
-      <li>نصب و پشتیبانی سرورهای ویندوز و لینوکس</li>
-      <li>راه‌اندازی فایروال، آنتی‌ویروس و امنیت شبکه</li>
-      <li>پشتیبانی از سیستم‌های کاربران، نرم‌افزار و سخت‌افزار</li>
-      <li>مشاوره برای بهینه‌سازی زیرساخت IT شرکت‌ها</li>
+      <li>خدمات پشتیبانی Helpdesk</li>
+      <li>نصب و راه‌اندازی سرورهای ویندوزی و لینوکسی</li>
+      <li>مشاوره و طراحی شبکه بر اساس نیاز مشتری</li>
+      <li>امن‌سازی شبکه و مدیریت دسترسی‌ها</li>
     </ul>
 
-    <div class="contact">
-      <h3>📞 تماس با ما:</h3>
-      <p>شماره تماس: 0912XXXXXXX</p>
-      <p>ایمیل: youremail@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </div>
-  </div>
+    <a href="tel:09125270698" class="call-btn">تماس: 09125270698</a>
+  </section>
+
+  <footer>
+    تمامی حقوق محفوظ است | طراحی‌شده توسط نادری‌زاده
+  </footer>
+
 </body>
 </html>
