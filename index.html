@@ -12,173 +12,96 @@
       padding: 0;
       direction: rtl;
     }
-
-    nav {
-      background: #007bff;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
     .container {
-      max-width: 900px;
-      margin: 40px auto;
+      max-width: 800px;
+      margin: 30px auto;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
       overflow: hidden;
     }
-
     .header {
-      background: linear-gradient(to left, #1e90ff, #007bff);
-      color: #fff;
-      padding: 30px;
+      background: linear-gradient(to left, #007BFF, #00C6FF);
+      padding: 20px;
+      color: white;
       text-align: center;
     }
-
     .header h1 {
       margin: 0;
       font-size: 28px;
     }
-
-    .header p {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-
-    .banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
     .content {
       padding: 30px;
       line-height: 1.8;
+    }
+    .content h2 {
       color: #333;
     }
-
-    .content h2 {
-      color: #007bff;
-      font-size: 22px;
-    }
-
-    .content ul {
-      padding-right: 20px;
-      margin-top: 15px;
-    }
-
-    .content ul li {
-      margin-bottom: 10px;
+    .content p {
       font-size: 16px;
+      color: #444;
     }
-
     .btn {
       display: inline-block;
-      background: #007bff;
-      color: #fff;
-      padding: 12px 30px;
-      margin-top: 25px;
+      background: #007BFF;
+      color: white;
+      padding: 12px 25px;
       text-decoration: none;
       border-radius: 8px;
+      margin-top: 20px;
       transition: background 0.3s ease;
     }
-
     .btn:hover {
       background: #0056b3;
     }
-
     .footer {
-      background: #f9f9f9;
+      background: #f1f1f1;
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      color: #777;
+      color: #666;
     }
-
-    .about {
-      background: #fff;
-      padding: 40px;
-      margin-top: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    .about h2 {
-      color: #007bff;
-      margin-bottom: 20px;
-    }
-
-    .about img {
-      width: 150px;
-      margin: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+    @media (max-width: 600px) {
+      .content, .header {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <div>MN Tech Support</div>
-    <div>
-      <a href="#">خانه</a>
-      <a href="#about">درباره ما</a>
-      <a href="#contact">تماس با ما</a>
-    </div>
-  </nav>
 
-  <div class="container">
-    <div class="header">
-      <h1>خدمات مهندسی شبکه و پشتیبانی سیستم‌های کامپیوتری</h1>
-      <p>امنیت، سرعت و پایداری زیرساخت‌های IT خود را به MN Tech Support بسپارید</p>
-    </div>
-
-    <div class="banner">
-      <img src="https://www.networkworld.com/wp-content/uploads/2023/05/networking_it_security_cybersecurity_management_by_metamorworks_gettyimages-1278971277-2400x1600-100898957-orig.jpg" alt="خدمات شبکه و امنیت IT">
-    </div>
-
-    <div class="content">
-      <h2>چرا ما را انتخاب کنید؟</h2>
-      <ul>
-        <li>طراحی و پیاده‌سازی شبکه‌های کامپیوتری حرفه‌ای</li>
-        <li>پشتیبانی از سیستم‌های سرور و مجازی‌سازی</li>
-        <li>امن‌سازی شبکه با فایروال، آنتی‌ویروس و مانیتورینگ</li>
-        <li>راه‌اندازی تجهیزات سیسکو، میکروتیک و HPE</li>
-        <li>قرارداد نگهداری و پشتیبانی برای شرکت‌ها</li>
-      </ul>
-      <a href="#contact" class="btn">دریافت مشاوره رایگان</a>
-    </div>
-
-    <div class="about" id="about">
-      <h2>درباره ما</h2>
-      <p>شرکت <strong>MN Tech Support</strong> با بیش از ۱۰ سال تجربه در زمینه مهندسی شبکه، امنیت اطلاعات، و پشتیبانی سیستم‌های کامپیوتری، آماده خدمت‌رسانی به سازمان‌ها و شرکت‌های بزرگ و کوچک است.</p>
-      <p>مدارک بین‌المللی ما شامل موارد زیر است:</p>
-      <ul>
-        <li>CCNA - Cisco Certified Network Associate</li>
-        <li>Linux LPIC-1</li>
-        <li>Microsoft Certified: Windows Server</li>
-        <li>Docker & Kubernetes Fundamentals</li>
-      </ul>
-      <div>
-        <img src="certificate1.jpg" alt="مدرک 1">
-        <img src="certificate2.jpg" alt="مدرک 2">
-        <img src="certificate3.jpg" alt="مدرک 3">
-      </div>
-    </div>
-
-    <div class="footer" id="contact">
-      راه ارتباطی: info@mntechsupport.com | شماره تماس: ۰۹۱۲xxxxxxx<br>
-      کلیه حقوق محفوظ است © MN Tech Support 2025
-    </div>
+<div class="container">
+  
+    <p><a href="#about" style="color: #fff; text-decoration: underline; font-size: 14px;">درباره ما</a></p>
   </div>
+
+  <div class="content">
+    <h2>چرا ما؟</h2>
+    <p>با بیش از ۱۰ سال تجربه در زمینه طراحی شبکه، امنیت اطلاعات و نگهداری از سیستم‌های رایانه‌ای، MN Tech Support انتخابی حرفه‌ای برای کسب‌وکار شماست.</p>
+    <ul>
+      <li>نصب و راه‌اندازی تجهیزات شبکه</li>
+      <li>پشتیبانی از سرورها، مجازی‌سازی، و سیستم‌های لینوکس و ویندوز</li>
+      <li>امن‌سازی شبکه و تهیه نسخه پشتیبان</li>
+    </ul>
+    <a href="#about" class="btn">بیشتر بدانید</a>
+  </div>
+
+  <div class="content" id="about">
+    <h2>درباره ما</h2>
+    <p>MN Tech Support دارای مدارک معتبر بین‌المللی از جمله:</p>
+    <ul>
+      <li>CCNA - Cisco</li>
+      <li>LPIC-1 - Linux</li>
+      <li>Windows Server - Microsoft Certified</li>
+      <li>Docker & Kubernetes</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    تماس با ما: info@mntechsupport.com<br>
+    © تمامی حقوق متعلق به MN Tech Support است - 2025
+  </div>
+</div>
+
 </body>
 </html>
