@@ -1,81 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>خدمات مهندسی شبکه</title>
-  <style>
-    body {
-      font-family: Tahoma, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    .hero {
-      background-color: #0a4d8c;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-      margin-top: -2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      margin-top: 0;
-    }
-
-    ul {
-      text-align: right;
-      line-height: 2;
-    }
-
-    .contact {
-      margin-top: 2rem;
-      padding: 1rem;
-      background-color: #f0f0f0;
-      border-radius: 6px;
-      text-align: right;
-    }
-
-    a {
-      color: #0a4d8c;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="hero">
-    <h1>خدمات مهندسی شبکه و پشتیبانی سیستم‌های کامپیوتری</h1>
-    <p>سریع، مطمئن، حرفه‌ای</p>
-  </div>
-
-  <div class="container">
-    <h2>🔧 خدمات ما:</h2>
-    <ul>
-      <li>طراحی و پیاده‌سازی شبکه‌های کامپیوتری (LAN/WAN/Wireless)</li>
-      <li>نصب و پشتیبانی سرورهای ویندوز و لینوکس</li>
-      <li>راه‌اندازی فایروال، آنتی‌ویروس و امنیت شبکه</li>
-      <li>پشتیبانی از سیستم‌های کاربران، نرم‌افزار و سخت‌افزار</li>
-      <li>مشاوره برای بهینه‌سازی زیرساخت IT شرکت‌ها</li>
-    </ul>
-
-    <div class="contact">
-      <h3>📞 تماس با ما:</h3>
-      <p>شماره تماس: 0912XXXXXXX</p>
-      <p>ایمیل: youremail@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </div>
-  </div>
-</body>
-</html>
