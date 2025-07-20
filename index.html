@@ -1,198 +1,184 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>خدمات نصب و پشتیبانی شبکه‌های کامپیوتری</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MN Tech Support | خدمات مهندسی شبکه</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
+      font-family: 'Tahoma', sans-serif;
+      background: #f2f2f2;
       margin: 0;
-      font-family: 'Vazirmatn', Tahoma, sans-serif;
-      background-color: #f0f4f8;
-      color: #2c3e50;
-      line-height: 1.6;
+      padding: 0;
+      direction: rtl;
     }
 
-    header {
-      background: linear-gradient(90deg, #0052cc, #0066ff);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    nav {
+      background: #007bff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      opacity: 0.9;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 900px;
       margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-bottom: 50px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s ease;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    .header {
+      background: linear-gradient(to left, #1e90ff, #007bff);
+      color: #fff;
+      padding: 30px;
+      text-align: center;
     }
 
-    .card img {
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .banner img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      height: auto;
+      display: block;
     }
 
-    .card-content {
-      padding: 20px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
+    .content {
+      padding: 30px;
+      line-height: 1.8;
+      color: #333;
     }
 
-    .card-content h3 {
-      margin: 0 0 15px 0;
-      color: #0052cc;
+    .content h2 {
+      color: #007bff;
+      font-size: 22px;
     }
 
-    .card-content ul {
-      list-style: inside disc;
-      padding: 0;
-      margin: 0 0 15px 0;
-      flex-grow: 1;
-      color: #34495e;
+    .content ul {
+      padding-right: 20px;
+      margin-top: 15px;
     }
 
-    .card-content ul li {
-      margin-bottom: 8px;
+    .content ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
     }
 
-    .btn-contact {
-      background-color: #0066ff;
-      color: white;
-      text-align: center;
-      padding: 14px 0;
-      border-radius: 8px;
-      font-weight: 600;
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 12px 30px;
+      margin-top: 25px;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,102,255,0.4);
-      transition: background-color 0.3s ease;
+      border-radius: 8px;
+      transition: background 0.3s ease;
     }
 
-    .btn-contact:hover {
-      background-color: #004bb5;
-      box-shadow: 0 6px 14px rgba(0,75,181,0.6);
+    .btn:hover {
+      background: #0056b3;
     }
 
-    footer {
-      background-color: #222;
-      color: #ddd;
+    .footer {
+      background: #f9f9f9;
       text-align: center;
-      padding: 20px 10px;
-      font-size: 0.9rem;
+      padding: 15px;
+      font-size: 14px;
+      color: #777;
     }
 
-    @media(max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .card img {
-        height: 160px;
-      }
+    .about {
+      background: #fff;
+      padding: 40px;
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .about h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .about img {
+      width: 150px;
+      margin: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <div>MN Tech Support</div>
+    <div>
+      <a href="#">خانه</a>
+      <a href="#about">درباره ما</a>
+      <a href="#contact">تماس با ما</a>
+    </div>
+  </nav>
 
-<header>
-  <h1>خدمات نصب و پشتیبانی شبکه‌های کامپیوتری</h1>
-  <p>راه‌حل‌های تخصصی برای دیتاسنترها، شرکت‌ها و دفاتر کاری</p>
-</header>
+  <div class="container">
+    <div class="header">
+      <h1>خدمات مهندسی شبکه و پشتیبانی سیستم‌های کامپیوتری</h1>
+      <p>امنیت، سرعت و پایداری زیرساخت‌های IT خود را به MN Tech Support بسپارید</p>
+    </div>
 
-<main class="container">
+    <div class="banner">
+      <img src="https://www.networkworld.com/wp-content/uploads/2023/05/networking_it_security_cybersecurity_management_by_metamorworks_gettyimages-1278971277-2400x1600-100898957-orig.jpg" alt="خدمات شبکه و امنیت IT">
+    </div>
 
-  <section class="services">
+    <div class="content">
+      <h2>چرا ما را انتخاب کنید؟</h2>
+      <ul>
+        <li>طراحی و پیاده‌سازی شبکه‌های کامپیوتری حرفه‌ای</li>
+        <li>پشتیبانی از سیستم‌های سرور و مجازی‌سازی</li>
+        <li>امن‌سازی شبکه با فایروال، آنتی‌ویروس و مانیتورینگ</li>
+        <li>راه‌اندازی تجهیزات سیسکو، میکروتیک و HPE</li>
+        <li>قرارداد نگهداری و پشتیبانی برای شرکت‌ها</li>
+      </ul>
+      <a href="#contact" class="btn">دریافت مشاوره رایگان</a>
+    </div>
 
-    <article class="card">
-      <img src="pic (1).jpg?auto=format&fit=crop&w=800&q=80" alt="دیتاسنتر و سرورها" />
-      <div class="card-content">
-        <h3>راه‌اندازی دیتاسنتر و سرورها</h3>
-        <ul>
-          <li>طراحی و پیاده‌سازی دیتاسنترهای اختصاصی</li>
-          <li>نصب و پیکربندی سرورهای فیزیکی و مجازی</li>
-          <li>مانیتورینگ و بهینه‌سازی عملکرد سرورها</li>
-          <li>مدیریت فضای ذخیره‌سازی و بکاپ‌گیری حرفه‌ای</li>
-        </ul>
-        <a href="tel:09125270698" class="btn-contact">تماس فوری: 09125270698 نادری زاده</a>
+    <div class="about" id="about">
+      <h2>درباره ما</h2>
+      <p>شرکت <strong>MN Tech Support</strong> با بیش از ۱۰ سال تجربه در زمینه مهندسی شبکه، امنیت اطلاعات، و پشتیبانی سیستم‌های کامپیوتری، آماده خدمت‌رسانی به سازمان‌ها و شرکت‌های بزرگ و کوچک است.</p>
+      <p>مدارک بین‌المللی ما شامل موارد زیر است:</p>
+      <ul>
+        <li>CCNA - Cisco Certified Network Associate</li>
+        <li>Linux LPIC-1</li>
+        <li>Microsoft Certified: Windows Server</li>
+        <li>Docker & Kubernetes Fundamentals</li>
+      </ul>
+      <div>
+        <img src="certificate1.jpg" alt="مدرک 1">
+        <img src="certificate2.jpg" alt="مدرک 2">
+        <img src="certificate3.jpg" alt="مدرک 3">
       </div>
-    </article>
+    </div>
 
-    <article class="card">
-      <img src="pic (2).jpg?auto=format&fit=crop&w=800&q=80" alt="شبکه‌های کامپیوتری" />
-      <div class="card-content">
-        <h3>نصب و راه‌اندازی شبکه‌های کامپیوتری</h3>
-        <ul>
-          <li>پیاده‌سازی شبکه‌های LAN و WAN با تجهیزات روز دنیا</li>
-          <li>پیکربندی سوییچ‌ها، روترها و فایروال‌ها (Cisco, Mikrotik)</li>
-          <li>راه‌اندازی شبکه‌های بی‌سیم امن و پرسرعت</li>
-          <li>عیب‌یابی و رفع مشکلات شبکه به صورت حرفه‌ای</li>
-        </ul>
-        <a href="tel:09125270698" class="btn-contact">تماس فوری: 09125270698 نادری زاده </a>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="pic (3).jpg?auto=format&fit=crop&w=800&q=80" alt="پشتیبانی سیستم‌ها" />
-      <div class="card-content">
-        <h3>پشتیبانی سیستم‌های کامپیوتری</h3>
-        <ul>
-          <li>پشتیبانی ۲۴/۷ سخت‌افزار و نرم‌افزار</li>
-          <li>نصب و به‌روزرسانی آنتی‌ویروس و سیستم‌های امنیتی</li>
-          <li>پشتیبانی از راه دور و حضور در محل</li>
-          <li>رفع مشکلات نرم‌افزاری و سخت‌افزاری در کمترین زمان</li>
-        </ul>
-        <a href="tel:09125270698" class="btn-contact">تماس فوری: 09125270698 نادری زاده</a>
-      </div>
-    </article>
-
-  </section>
-
-</main>
-
-<footer>
-  © تمامی حقوق برای شرکت خدمات شبکه نادری زاده محفوظ است.
-</footer>
-
+    <div class="footer" id="contact">
+      راه ارتباطی: info@mntechsupport.com | شماره تماس: ۰۹۱۲xxxxxxx<br>
+      کلیه حقوق محفوظ است © MN Tech Support 2025
+    </div>
+  </div>
 </body>
 </html>
