@@ -81,6 +81,100 @@
     }
   </style>
 </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>گالری مدارک</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background-color: #f0f4f8;
+      color: #2c3e50;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0052cc, #0066ff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header nav {
+      margin-top: 10px;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .gallery-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border: 4px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    @media(max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 500px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 <body>
 <header>
   <h1>خدمات نصب و پشتیبانی شبکه‌های کامپیوتری</h1>
@@ -102,19 +196,19 @@
 
 <main class="gallery-container">
   <div class="gallery-grid">
-    <img src="mcitp.jpg" alt="mcitp.jpg" />
-    <img src="ccna.jpg" alt="ccna.jpg" />
-    <img src="ccnp.jpg" alt="ccnp.jpg" />
-    <img src="mtcna.jpg" alt="mtcna.jpg" />
-    <img src="mtcume.jpg" alt="mtcume.jpg" />
-    <img src="lpic1.jpg" alt="lpic1.jpg" />
-    <img src="lpic2.jpg" alt="lpic2.jpg" />
-    <img src="lpic3.jpg" alt="lpic3.jpg" />
-    <img src="asterisk.jpg" alt="asterisk.jpg" />
-    <img src="issabel.jpg" alt="issabel.jpg" />
-    <img src="python.jpg" alt="python.jpg" />
-    <img src="devnet.jpg" alt="devnet.jpg" />
-    <img src="kuber.jpg" alt="kuber.jpg" />
+    <div class="gallery-item"> <img src="mcitp.jpg" alt="mcitp.jpg" /></div>
+     <div class="gallery-item"><img src="ccna.jpg" alt="ccna.jpg" /></div>
+     <div class="gallery-item"><img src="ccnp.jpg" alt="ccnp.jpg" /></div>
+     <div class="gallery-item"><img src="mtcna.jpg" alt="mtcna.jpg" /></div>
+     <div class="gallery-item"><img src="mtcume.jpg" alt="mtcume.jpg" /></div>
+     <div class="gallery-item"><img src="lpic1.jpg" alt="lpic1.jpg" /></div>
+     <div class="gallery-item"><img src="lpic2.jpg" alt="lpic2.jpg" /></div>
+     <div class="gallery-item"><img src="lpic3.jpg" alt="lpic3.jpg" /></div>
+    <div class="gallery-item"> <img src="asterisk.jpg" alt="asterisk.jpg" /></div>
+     <div class="gallery-item"><img src="issabel.jpg" alt="issabel.jpg" /></div>
+     <div class="gallery-item"><img src="python.jpg" alt="python.jpg" /></div>
+     <div class="gallery-item"><img src="devnet.jpg" alt="devnet.jpg" /></div>
+     <div class="gallery-item"><img src="kuber.jpg" alt="kuber.jpg" /></div>
   </div>
 </main>
 
