@@ -13,11 +13,9 @@
     *{box-sizing:border-box}
     body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial;line-height:1.6;margin:0;background:#f7f9fc;color:#111}
     .container{max-width:1000px;margin:24px auto;padding:16px}
-    header{background:white;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(11,20,40,0.06);position:relative}
+    header{background:white;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(11,20,40,0.06)}
     h1{margin:0 0 6px;font-size:22px}
     p.lead{margin:0;color:var(--muted)}
-    .lang-toggle{position:absolute;top:16px;left:16px}
-    .lang-toggle button{margin:0 4px;padding:6px 10px;border:1px solid var(--accent);background:white;color:var(--accent);border-radius:6px;cursor:pointer;font-size:13px}
     .grid{display:grid;gap:14px;margin-top:18px}
     @media(min-width:720px){.grid{grid-template-columns:1fr 320px}}
     .card{background:white;padding:16px;border-radius:10px;box-shadow:0 4px 12px rgba(11,20,40,0.04)}
@@ -28,127 +26,77 @@
     label{display:block;margin-top:10px;font-size:14px}
     input,textarea{width:100%;padding:10px;border:1px solid #e3e7ee;border-radius:8px;margin-top:6px}
     button[type=submit]{margin-top:10px;padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:600}
-    [data-lang]{display:none}
-    body[lang="en"] [data-lang="en"], body[lang="fa"] [data-lang="fa"]{display:block}
+    img{max-width:100%;height:auto;border-radius:8px;margin:10px 0}
   </style>
 </head>
-<body lang="en">
+<body>
   <div class="container">
     <header>
-      <div class="lang-toggle">
-        <button onclick="setLang('en')">English</button>
-        <button onclick="setLang('fa')">فارسی</button>
-      </div>
-      <h1 data-lang="en">Computer Network Installation & Support</h1>
-      <h1 data-lang="fa">خدمات نصب و پشتیبانی شبکه‌های کامپیوتری</h1>
-
-      <p class="lead" data-lang="en">Professional solutions for data centers, companies, and offices</p>
-      <p class="lead" data-lang="fa">راه‌حل‌های تخصصی برای دیتاسنترها، شرکت‌ها و دفاتر کاری</p>
+      <h1>Computer Network Installation & Support</h1>
+      <p class="lead">Professional solutions for data centers, companies, and offices</p>
     </header>
 
     <div class="grid">
       <main class="card" id="services">
         <section>
-          <h2 data-lang="en">Data Center & Server Setup</h2>
-          <h2 data-lang="fa">راه‌اندازی دیتاسنتر و سرورها</h2>
-          <ul data-lang="en">
+          <h2>Data Center & Server Setup</h2>
+          <ul>
             <li>Design and implementation of dedicated data centers</li>
             <li>Installation and configuration of physical and virtual servers</li>
             <li>Server monitoring and performance optimization</li>
             <li>Storage management and professional backup solutions</li>
           </ul>
-          <ul data-lang="fa">
-            <li>طراحی و پیاده‌سازی دیتاسنترهای اختصاصی</li>
-            <li>نصب و پیکربندی سرورهای فیزیکی و مجازی</li>
-            <li>مانیتورینگ و بهینه‌سازی عملکرد سرورها</li>
-            <li>مدیریت فضای ذخیره‌سازی و بکاپ‌گیری حرفه‌ای</li>
-          </ul>
         </section>
 
         <section>
-          <h2 data-lang="en">Computer Network Installation</h2>
-          <h2 data-lang="fa">نصب و راه‌اندازی شبکه‌های کامپیوتری</h2>
-          <ul data-lang="en">
+          <h2>Computer Network Installation</h2>
+          <ul>
             <li>Implementation of LAN and WAN networks with modern equipment</li>
             <li>Configuration of switches, routers, and firewalls (Cisco, Mikrotik)</li>
             <li>Setup of secure and high-speed wireless networks</li>
             <li>Professional troubleshooting and problem resolution</li>
           </ul>
-          <ul data-lang="fa">
-            <li>پیاده‌سازی شبکه‌های LAN و WAN با تجهیزات روز دنیا</li>
-            <li>پیکربندی سوییچ‌ها، روترها و فایروال‌ها (Cisco, Mikrotik)</li>
-            <li>راه‌اندازی شبکه‌های بی‌سیم امن و پرسرعت</li>
-            <li>عیب‌یابی و رفع مشکلات شبکه به صورت حرفه‌ای</li>
-          </ul>
         </section>
 
         <section>
-          <h2 data-lang="en">Computer Systems Support</h2>
-          <h2 data-lang="fa">پشتیبانی سیستم‌های کامپیوتری</h2>
-          <ul data-lang="en">
+          <h2>Computer Systems Support</h2>
+          <ul>
             <li>24/7 hardware and software support</li>
             <li>Installation and updating of antivirus and security systems</li>
             <li>Remote support and on-site assistance</li>
             <li>Fast resolution of software and hardware issues</li>
           </ul>
-          <ul data-lang="fa">
-            <li>پشتیبانی ۲۴/۷ سخت‌افزار و نرم‌افزار</li>
-            <li>نصب و به‌روزرسانی آنتی‌ویروس و سیستم‌های امنیتی</li>
-            <li>پشتیبانی از راه دور و حضور در محل</li>
-            <li>رفع مشکلات نرم‌افزاری و سخت‌افزاری در کمترین زمان</li>
-          </ul>
         </section>
 
-        <p style="margin-top:16px;color:var(--muted)" data-lang="en">Contact number: <strong>09125270698</strong></p>
-        <p style="margin-top:16px;color:var(--muted)" data-lang="fa">شماره تماسِ درج‌شده در سایت: <strong>09125270698</strong></p>
+        <p style="margin-top:16px;color:var(--muted)">Contact number: <strong>09125270698</strong></p>
       </main>
 
       <aside class="card">
-        <h3 data-lang="en">Quick Contact</h3>
-        <h3 data-lang="fa">تماس فوری</h3>
-
+        <h3>Quick Contact</h3>
         <a class="tel" href="tel:+989125270698">📞 09125270698</a>
-        <p class="contact-small" data-lang="en">Or send us an email message:</p>
-        <p class="contact-small" data-lang="fa">یا یک پیام ایمیلی ارسال کنید:</p>
+        <p class="contact-small">Or send us an email message:</p>
 
         <form action="https://formspree.io/f/yourformid" method="POST" aria-label="Contact Form">
-          <label for="name" data-lang="en">Name</label>
-          <label for="name" data-lang="fa">نام</label>
+          <label for="name">Name</label>
           <input id="name" name="name" required>
 
-          <label for="email" data-lang="en">Email</label>
-          <label for="email" data-lang="fa">ایمیل</label>
+          <label for="email">Email</label>
           <input id="email" name="email" type="email" required>
 
-          <label for="message" data-lang="en">Message</label>
-          <label for="message" data-lang="fa">پیام</label>
+          <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit" data-lang="en">Send Message</button>
-          <button type="submit" data-lang="fa">ارسال پیام</button>
+          <button type="submit">Send Message</button>
         </form>
 
         <hr style="margin:12px 0;border:none;border-top:1px solid #eef">
-        <p style="font-size:13px;color:var(--muted)" data-lang="en">Site ownership: Morteza Naderizadeh Company</p>
-        <p style="font-size:13px;color:var(--muted)" data-lang="fa">آدرس سایت و مالکیت: Morteza Naderizadeh Company</p>
+        <p style="font-size:13px;color:var(--muted)">Site ownership: Morteza Naderizadeh Company</p>
       </aside>
     </div>
 
     <footer class="card" style="margin-top:14px">
-      <span data-lang="en">© All rights reserved by Morteza Naderizadeh Company.</span>
-      <span data-lang="fa">© تمامی حقوق برای Morteza Naderizadeh Company محفوظ است.</span>
+      © All rights reserved by Morteza Naderizadeh Company.
     </footer>
   </div>
-
-  <script>
-    function setLang(lang){
-      document.body.setAttribute('lang', lang);
-      if(lang==='fa'){
-        document.body.setAttribute('dir','rtl');
-      } else {
-        document.body.setAttribute('dir','ltr');
-      }
-    }
-  </script>
 </body>
 </html>
